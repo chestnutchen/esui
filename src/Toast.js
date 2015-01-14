@@ -76,6 +76,8 @@ define(
          */
         Toast.prototype.initStructure = function () {
             this.main.innerHTML = this.helper.getPartHTML('content', 'p');
+            // 增加一个默认的状态hidden
+            this.addState('hidden');
         };
 
         /**
